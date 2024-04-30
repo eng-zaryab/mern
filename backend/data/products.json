@@ -1,0 +1,45 @@
+[
+    {
+        "name": "Camera",
+        "price": "95.0",
+        "description": "This is Canon Camera for everytone",
+        "ratings": "4.5",
+        "image": [{
+                "public_id": "products/abcdefghijklmnopqrstuvwxyz",
+                "url": "https://www.pexels.com/photo/black-analog-canon-camera-9660955/"}],
+        "category": "Electronics",
+        "seller": "ZAR",
+        "stock": 50,
+        "numberOfReviews": 32,
+        "reviews": []
+    },
+    {
+        "name": "Sony Camera",
+        "price": "300.0",
+        "description": "Sony DSLR camera for photography",
+        "ratings": "4.5",
+        "image": [{
+                "public_id": "products/sonyabceimagbegexpqrstuvwxyz",
+                "url": "https://www.pexels.com/photo/close-up-of-a-camera-15700108/"}],
+        "category": "Electronics",
+        "seller": "ZAR",
+        "stock": 30,
+        "numberOfReviews": 45,
+        "reviews": []
+    },
+    {
+        "name": "Shirts",
+        "price": "30.0",
+        "description": "Stylish collection for youth",
+        "ratings": "4.5",
+        "image": [{
+                "public_id": "products/shirtabcsimadlkgigyd",
+                "url": "https://www.pexels.com/photo/clothes-on-yellow-background-18533674/"}],
+        "category": "Sports",
+        "seller": "ZAR",
+        "stock": 10,
+        "numberOfReviews": 50,
+        "reviews": []
+    }
+
+]
