@@ -1,6 +1,7 @@
 const User = require('../models/user');
 const errorHandler = require('../utils/errorHandler');
 const catchAsyncErrors = require('../middlewares/catchAsyncErrors');
+const sendToken = require('../utils/jwtToken');
 
 // Register a new USER => api/v1/register
 exports.registerUser = catchAsyncErrors ( async (req, res, next) => {
@@ -17,13 +18,7 @@ exports.registerUser = catchAsyncErrors ( async (req, res, next) => {
     });
 
     // Setting security token
-    const token = user.getJwtToken();
-
-
-    res.status(201).json({
-        success: true,
-        token
-    })
+    sendToken(user, 200, res)
 })
 
 // User Login => api/v1/login
@@ -47,10 +42,6 @@ exports.userLogin = catchAsyncErrors (async (req, res, next) => {
         return next (new errorHandler('Password does not match', 401))
     }
 
-    const token = user.getJwtToken();
-    res.status(200).json({
-        success: true,
-        token
-    })
+    sendToken(user, 200, res)
 })
 
